@@ -1,0 +1,40 @@
+/* Owner-specific styles - loaded for owner portal only */
+
+.badge-occupied {
+  background: var(--teal);
+  color: white;
+}
+
+.badge-vacant {
+  background: var(--muted);
+  color: white;
+}
+
+.occupancy-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  margin: 8px 0;
+  border-top: 1px solid var(--line);
+  font-size: 0.9rem;
+}
+
+.occupancy-status {
+  color: var(--teal);
+  font-weight: 600;
+}
+
+.hike-info {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.current-rent {
+  color: var(--teal);
+}
+
+.section-divider {
+  height: 1px;
+  background: var(--line);
+  margin: 32px 0;
+}

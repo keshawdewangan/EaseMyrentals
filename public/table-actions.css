@@ -1,0 +1,32 @@
+/* Table actions and edit/delete button styles */
+
+.table-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.button-danger {
+  background: #dc3545;
+  border-color: #dc3545;
+  color: white;
+}
+
+.button-danger:hover {
+  background: #c82333;
+  border-color: #bd2130;
+}
+
+/* Property actions specific */
+.property-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* Small button variant */
+.button-small {
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  min-height: 32px;
+}

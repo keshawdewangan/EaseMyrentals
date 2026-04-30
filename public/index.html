@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EaseMyRentals | Premium Managed Rentals in Bangalore</title>
+    <meta name="description" content="Premium furnished rentals, owner property management, rent ads, inspections, assets, and payments through EaseMyRentals.">
+    <!-- Premium Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/premium-styles.css">
+  </head>
+  <body>
+    <header class="site-header" id="siteHeader">
+      <a class="brand" href="#top" aria-label="EaseMyRentals home">
+        <span class="brand-mark">emr</span>
+        <span>ease my rentals</span>
+      </a>
+      <nav class="public-nav" aria-label="Primary navigation">
+        <a href="#home">Home</a>
+        <a href="#why-us">Why Us</a>
+        <a href="#other-services">Other Services</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#contact">Contact Us</a>
+        <a href="#about">About Us</a>
+      </nav>
+      <div class="header-actions">
+        <a class="ghost-link" href="https://wa.me/917204892105" target="_blank" rel="noreferrer">Talk to Us</a>
+        <button class="button button-primary" id="openLogin" type="button">Login</button>
+      </div>
+    </header>
+
+    <main id="publicSite">
+      <section class="hero" id="home" aria-label="EaseMyRentals introduction">
+        <div class="hero-content">
+          <p class="eyebrow">Premium Rentals in Bellandur & Beyond</p>
+          <h1>EaseMyRentals</h1>
+          <p class="hero-copy">
+            Fully furnished, professionally managed homes in Bangalore's best locations. Zero brokerage, verified properties, and a team that handles the daily details.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#homes">Explore Homes</a>
+            <a class="button button-light" href="#contact" data-interest="Property owner">List Your Property</a>
+          </div>
+        </div>
+        <div class="hero-metrics" aria-label="Company highlights">
+          <div>
+            <strong>3 yrs</strong>
+            <span>Company lease support</span>
+          </div>
+          <div>
+            <strong>21 days</strong>
+            <span>Average first-rent time</span>
+          </div>
+          <div>
+            <strong>₹5L+</strong>
+            <span>Annual earnings per property</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section listings-section" id="homes">
+        <div class="section-heading">
+          <p class="eyebrow">Featured Homes</p>
+          <h2>Homes and rent ads ready to publish</h2>
+          <p>Handpicked rentals with transparent pricing, owner ad slots, and managed leads.</p>
+        </div>
+        <div class="listing-grid" id="publicListings" aria-live="polite"></div>
+      </section>
+
+      <section class="section process-section" id="process">
+        <div class="section-heading">
+          <p class="eyebrow">How It Works</p>
+          <h2>Simple steps to your next home</h2>
+        </div>
+        <div class="process-grid">
+          <article>
+            <span>01</span>
+            <h3>Find a Home</h3>
+            <p>Browse verified furnished homes in Bangalore's strongest rental neighborhoods.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Book a Visit</h3>
+            <p>Tour the property, review the agreement, and get clear answers before paying.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Move in Easy</h3>
+            <p>Complete paperwork, deposit, rent, and handover without brokerage surprises.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Live Hassle-Free</h3>
+            <p>Maintenance, inspections, assets, and payment records stay visible in one login.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section feature-tabs-section" id="why-us">
+        <div class="section-heading">
+          <p class="eyebrow">Managed rental benefits</p>
+          <h2>Why owners and tenants choose EaseMyRentals</h2>
+          <p>Discover the advantages of working with our team, from faster rentals and transparent payouts to verified homes and responsive tenant care.</p>
+        </div>
+        <div class="feature-tabs" role="tablist" aria-label="Owner and tenant tabs">
+          <button type="button" class="tab-button is-active" data-tab="owners">Owners</button>
+          <button type="button" class="tab-button" data-tab="tenants">Tenants</button>
+        </div>
+        <div class="feature-panels">
+          <article class="feature-panel is-active" id="feature-owners">
+            <div class="panel-copy">
+              <p class="eyebrow">Owner benefits</p>
+              <h3>Partner with us to maximize returns and reduce everyday effort.</h3>
+              <p>EaseMyRentals handles tenant selection, rent collection, maintenance, and reporting so owners can enjoy steady cash flow without the management burden.</p>
+              <ul class="feature-list">
+                <li><strong>Transparent payouts:</strong> clear rent statements, service fees, and scheduled owner transfers.</li>
+                <li><strong>Tenant verification:</strong> KYC, reference checks, and background screening for responsible occupancy.</li>
+                <li><strong>Property care:</strong> regular inspections, asset tracking, and vendor coordination for repairs.</li>
+                <li><strong>Faster occupancy:</strong> professionally managed listings and tenant-ready handovers reduce vacancy time.</li>
+                <li><strong>Flexible lease models:</strong> company lease and standard rental options that match owner goals.</li>
+              </ul>
+            </div>
+            <img class="feature-image" src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80" alt="Property owner reviewing rental documents">
+          </article>
+
+          <article class="feature-panel" id="feature-tenants">
+            <div class="panel-copy">
+              <p class="eyebrow">Tenant benefits</p>
+              <h3>Find verified, furnished homes with support that makes moving easy.</h3>
+              <p>Tenants get a seamless rental experience with trusted homes, transparent billing, and quick maintenance support from one dedicated team.</p>
+              <ul class="feature-list">
+                <li><strong>Verified listings:</strong> only inspected, properly described homes are offered.</li>
+                <li><strong>Move-in support:</strong> walkthroughs, inventory checks, and handover assistance for every property.</li>
+                <li><strong>Responsive maintenance:</strong> issue reporting and resolution guided through the platform.</li>
+                <li><strong>Clear rental terms:</strong> simple agreements, deposit handling, and billing transparency.</li>
+                <li><strong>Comfort-first homes:</strong> furnished, secure, and well-maintained properties in prime Bangalore neighborhoods.</li>
+              </ul>
+            </div>
+            <img class="feature-image" src="https://images.unsplash.com/photo-1548247412-81a1ab1b49ae?auto=format&fit=crop&w=1200&q=80" alt="Tenant relaxing in a furnished living room">
+          </article>
+        </div>
+      </section>
+
+      <section class="section other-services-section" id="other-services">
+        <div class="section-heading">
+          <p class="eyebrow">Other services</p>
+          <h2>Beautifully prepared homes, ready for your next tenant.</h2>
+          <p>Our skilled in-house team transforms rental properties with premium cleaning, finishing, repair, and staging services that make every home move-in ready.</p>
+        </div>
+        <div class="other-services-grid">
+          <div class="other-services-copy">
+            <p class="eyebrow">Renovation services</p>
+            <h3>End-to-end property makeover by our expert crew.</h3>
+            <p>From deep cleaning to finishing touches, our team handles every detail so your rental looks refreshed, polished, and tenant-ready.</p>
+            <ul class="feature-list">
+              <li><strong>Deep cleaning services:</strong> complete cleaning and sanitization so every room feels fresh and welcoming.</li>
+              <li><strong>Painting & finishing:</strong> crisp painting, wall repair, and styling that elevate your property instantly.</li>
+              <li><strong>Repair & maintenance:</strong> fast, reliable plumbing, electrical, carpentry, and general repairs by our trained team.</li>
+              <li><strong>Furnishing setup:</strong> smart staging and furniture placement that turn houses into desirable homes.</li>
+              <li><strong>Quality assurance:</strong> final inspections and follow-up support to ensure every job is flawless.</li>
+            </ul>
+          </div>
+          <img class="feature-image" src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80" alt="Skilled renovation staff preparing a rental property">
+        </div>
+        <div class="service-card-grid">
+          <article class="service-card">
+            <h3>Cleaning & sanitization</h3>
+            <p>Deep cleaning, disinfection, and final touch-ups that prepare your property for move-in, guest visits, or site inspections.</p>
+          </article>
+          <article class="service-card">
+            <h3>Painting & repairs</h3>
+            <p>Professional painting, patching, and repair work done by our own team so your home looks fresh and ready to attract quality tenants.</p>
+          </article>
+          <article class="service-card">
+            <h3>Turn-key staging</h3>
+            <p>Furniture setup, decor refresh, and inventory support to make rental properties feel comfortable and move-in ready.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section testimonials-section" id="testimonials">
+        <div class="section-heading">
+          <p class="eyebrow">Reviews</p>
+          <h2>People love EaseMyRentals</h2>
+        </div>
+        <div class="testimonial-grid">
+          <figure>
+            <blockquote>Best decision I made. Rent comes on time every month, and I never have to deal with tenant issues.</blockquote>
+            <figcaption>Rajesh Kumar, Property Owner</figcaption>
+          </figure>
+          <figure>
+            <blockquote>Any maintenance issue is handled quickly. The process feels transparent and professionally managed.</blockquote>
+            <figcaption>Priya Sharma, Tenant</figcaption>
+          </figure>
+          <figure>
+            <blockquote>Our society has seen better tenant quality since partnering with EaseMyRentals.</blockquote>
+            <figcaption>Vikram Reddy, RWA President</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section about-section" id="about">
+        <div class="section-heading">
+          <p class="eyebrow">About Us</p>
+          <h2>Simplifying rental management in Bangalore</h2>
+          <p>EaseMyRentals was founded to make property management effortless for owners and finding quality homes simple for tenants. We combine technology with trusted service partners to create transparent, reliable rental experiences.</p>
+        </div>
+        <div class="about-grid">
+          <article>
+            <h3>Our Mission</h3>
+            <p>To revolutionize rental housing by connecting property owners with verified tenants through professional management services and cutting-edge technology.</p>
+          </article>
+          <article>
+            <h3>Our Vision</h3>
+            <p>Become Bangalore's most trusted rental platform, known for transparency, quality service, and making rental housing accessible to everyone.</p>
+          </article>
+          <article>
+            <h3>Our Values</h3>
+            <p>Trust, transparency, quality, and customer satisfaction drive everything we do. We believe in building long-term relationships with our community.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="contact-copy">
+          <p class="eyebrow">Get in Touch</p>
+          <h2>Ready to find your perfect home?</h2>
+          <p>Drop a message, list a property, or ask about rent ads. The team is based in Bellandur, Bangalore.</p>
+          <div class="contact-lines">
+            <a href="https://wa.me/917204892105" target="_blank" rel="noreferrer">+91 7204892105</a>
+            <a href="mailto:admin@easemyrentals.com">admin@easemyrentals.com</a>
+            <span>Bellandur, Bangalore</span>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <label>
+            <span>Name</span>
+            <input name="name" autocomplete="name" required>
+          </label>
+          <label>
+            <span>Phone</span>
+            <input name="phone" autocomplete="tel" required>
+          </label>
+          <label>
+            <span>Email</span>
+            <input name="email" type="email" autocomplete="email">
+          </label>
+          <label>
+            <span>I am a</span>
+            <select name="interest" id="interestSelect" required>
+              <option value="">Select</option>
+              <option value="tenant">Looking for a home (Tenant)</option>
+              <option value="owner">Property owner</option>
+              <option value="ad">Rent ad listing</option>
+              <option value="renovation">Renovation enquiry</option>
+            </select>
+          </label>
+          
+          <!-- Owner-specific fields -->
+          <div id="ownerFields" class="conditional-fields" hidden>
+            <label>
+              <span>Property Type</span>
+              <select name="property_type">
+                <option value="">Select</option>
+                <option>Flat/Apartment</option>
+                <option>Villa</option>
+                <option>Independent House</option>
+                <option>PG/Hostel</option>
+              </select>
+            </label>
+            <label>
+              <span>Size</span>
+              <select name="property_size">
+                <option value="">Select</option>
+                <option>1 BHK</option>
+                <option>2 BHK</option>
+                <option>3 BHK</option>
+                <option>4 BHK</option>
+                <option>5+ BHK</option>
+              </select>
+            </label>
+            <label>
+              <span>Area/Locality</span>
+              <select name="area">
+                <option value="">Select</option>
+                <option>Bellandur</option>
+                <option>Marathahalli</option>
+                <option>HSR Layout</option>
+                <option>Electronic City</option>
+                <option>Koramangala</option>
+                <option>Whitefield</option>
+                <option>Indiranagar</option>
+                <option>JP Nagar</option>
+                <option>Other</option>
+              </select>
+            </label>
+            <label>
+              <span>Expected Rent (₹/month)</span>
+              <input name="expected_rent" type="number" placeholder="e.g., 25000">
+            </label>
+            <label>
+              <span>Available From</span>
+              <input name="start_date" type="date">
+            </label>
+          </div>
+          
+          <!-- Tenant-specific fields -->
+          <div id="tenantFields" class="conditional-fields" hidden>
+            <label>
+              <span>Looking For</span>
+              <select name="looking_for">
+                <option value="">Select</option>
+                <option>Room in shared flat</option>
+                <option>1 BHK</option>
+                <option>2 BHK</option>
+                <option>3 BHK</option>
+                <option>4 BHK</option>
+                <option>5+ BHK</option>
+              </select>
+            </label>
+            <label>
+              <span>Property Type</span>
+              <select name="tenant_property_type">
+                <option value="">Select</option>
+                <option>Flat/Apartment</option>
+                <option>Villa</option>
+                <option>Independent House</option>
+                <option>PG/Hostel</option>
+              </select>
+            </label>
+            <label>
+              <span>Preferred Area</span>
+              <select name="preferred_area">
+                <option value="">Select</option>
+                <option>Bellandur</option>
+                <option>Marathahalli</option>
+                <option>HSR Layout</option>
+                <option>Electronic City</option>
+                <option>Koramangala</option>
+                <option>Whitefield</option>
+                <option>Indiranagar</option>
+                <option>JP Nagar</option>
+                <option>Other</option>
+              </select>
+            </label>
+            <label>
+              <span>Budget (₹/month)</span>
+              <input name="budget" type="number" placeholder="e.g., 20000">
+            </label>
+          </div>
+          
+          <label class="wide-field">
+            <span>Message</span>
+            <textarea name="message" rows="4" placeholder="Tell us more about your requirements..."></textarea>
+          </label>
+          <button class="button button-primary" type="submit">Send Message</button>
+          <p class="form-status" id="contactStatus" role="status"></p>
+        </form>
+      </section>
+    </main>
+
+    <main id="portal" class="portal" hidden>
+      <section class="portal-hero">
+        <div>
+          <p class="eyebrow" id="portalRole">Portal</p>
+          <h1 id="portalTitle">Welcome</h1>
+          <p id="portalSubtitle"></p>
+        </div>
+        <button class="button button-light" id="logoutButton" type="button">Logout</button>
+      </section>
+      <section class="portal-content" id="portalContent" aria-live="polite"></section>
+    </main>
+
+    <div class="login-overlay" id="loginOverlay" hidden>
+      <div class="login-panel" role="dialog" aria-modal="true" aria-labelledby="loginTitle">
+        <button class="icon-button" id="closeLogin" type="button" aria-label="Close login">×</button>
+        <p class="eyebrow">Secure Portal</p>
+        <h2 id="loginTitle">Login to EaseMyRentals</h2>
+        <form id="loginForm">
+          <label>
+            <span>Email</span>
+            <input name="email" type="email" autocomplete="email" required>
+          </label>
+          <label>
+            <span>Password</span>
+            <input name="password" type="password" autocomplete="current-password" required>
+          </label>
+          <button class="button button-primary" type="submit">Login</button>
+          <p class="form-status" id="loginStatus" role="alert"></p>
+        </form>
+      </div>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <footer class="site-footer">
+      <div>
+        <a class="brand" href="#top">
+          <span class="brand-mark">emr</span>
+          <span>ease my rentals</span>
+        </a>
+        <p>Premium rental homes in Bangalore. Professionally managed for hassle-free living.</p>
+      </div>
+      <div>
+        <h2>Quick Links</h2>
+        <a href="#homes">All Homes</a>
+        <a href="#other-services">Other Services</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div>
+        <h2>Locations</h2>
+        <span>Bellandur</span>
+        <span>Whitefield</span>
+        <span>Koramangala</span>
+        <span>HSR Layout</span>
+      </div>
+      <div>
+        <h2>Connect</h2>
+        <a href="https://wa.me/917204892105" target="_blank" rel="noreferrer">WhatsApp</a>
+        <a href="tel:+917204892105">Call Us</a>
+        <a href="mailto:admin@easemyrentals.com">Email</a>
+      </div>
+    </footer>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  ruby:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3.10"
+          bundler-cache: true
+
+      - name: Ruby syntax
+        run: ruby -c server.rb
+
+      - name: Compose config
+        run: docker compose config
+
+      - name: Docker build
+        run: docker compose build app

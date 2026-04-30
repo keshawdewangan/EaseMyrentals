@@ -1,0 +1,9 @@
+vendor/bundle
+data/docker-postgres
+.bundle
+.git
+.env
+.env.*
+!.env.example
+log
+tmp

@@ -1,0 +1,13 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+.bundle/
+vendor/bundle/
+log/
+tmp/
+coverage/
+data/docker-postgres/
+backups/
+certbot/
+*.log

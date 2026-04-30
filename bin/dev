@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+export DATABASE_URL="${DATABASE_URL:-postgres:///easemyrentals_development}"
+exec ruby server.rb

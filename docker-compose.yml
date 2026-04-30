@@ -1,0 +1,35 @@
+services:
+  db:
+    image: postgres:15
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-easemyrentals}
+      POSTGRES_USER: ${POSTGRES_USER:-easemyrentals}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-easemyrentals}
+    volumes:
+      - emr_postgres_data:/var/lib/postgresql/data
+    ports:
+      - "127.0.0.1:${DB_HOST_PORT:-5434}:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-easemyrentals} -d ${POSTGRES_DB:-easemyrentals}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  app:
+    build:
+      context: .
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgres://${POSTGRES_USER:-easemyrentals}:${POSTGRES_PASSWORD:-easemyrentals}@db:5432/${POSTGRES_DB:-easemyrentals}
+      PORT: 8000
+      BIND_ADDRESS: 0.0.0.0
+    ports:
+      - "${APP_PORT:-8000}:8000"
+
+volumes:
+  emr_postgres_data:
+    name: emr_postgres_dev_data
