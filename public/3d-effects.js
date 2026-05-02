@@ -105,7 +105,7 @@
         if (m.addedNodes.length) shouldReinit = true;
       });
       if (shouldReinit) {
-        initTiltCards();
+        if (!isTouchDevice()) initTiltCards();
         initScrollReveal();
       }
     });
@@ -114,10 +114,16 @@
   }
 
   /* ── 5. Init ─────────────────────────────────────── */
+  function isTouchDevice() {
+    return window.matchMedia('(hover: none)').matches || window.innerWidth <= 768;
+  }
+
   function init() {
-    initTiltCards();
+    if (!isTouchDevice()) {
+      initTiltCards();
+      initHeroParallax();
+    }
     initScrollReveal();
-    initHeroParallax();
     observeDOMChanges();
   }
 

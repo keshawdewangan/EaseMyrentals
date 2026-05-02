@@ -438,3 +438,124 @@ tbody tr {
 tbody tr:hover {
   box-shadow: 4px 0 0 var(--primary) inset;
 }
+
+/* =====================================================
+   MOBILE — disable 3D effects on small screens & touch
+   Hover/tilt makes no sense on touch devices and
+   perspective transforms cause overflow + clipping.
+   ===================================================== */
+
+@media (max-width: 768px), (hover: none) {
+  /* Reset all tilt cards */
+  .tilt-card {
+    transform: none !important;
+    transform-style: flat !important;
+    will-change: auto;
+  }
+  .tilt-card:hover {
+    box-shadow: 0 8px 24px rgba(219, 39, 119, 0.15);
+    transform: none !important;
+  }
+  .tilt-card::after { display: none; }
+
+  /* Reset hero 3D depth layers */
+  .hero {
+    transform-style: flat !important;
+    perspective: none !important;
+  }
+  .hero .eyebrow {
+    transform: none !important;
+    display: inline-block;
+  }
+  .hero-content h1,
+  .hero-copy,
+  .hero-actions,
+  .hero-metrics {
+    transform: none !important;
+    display: block;
+  }
+  .hero::before {
+    transform: none !important;
+    filter: blur(20px);
+  }
+
+  /* Reset article / figure cards */
+  .process-grid article,
+  .owner-grid article,
+  .testimonial-grid figure,
+  .hero-metrics > div,
+  .contact-form {
+    transform: none !important;
+    transform-style: flat !important;
+  }
+  .hero-metrics > div:hover,
+  .process-grid article:hover,
+  .owner-grid article:hover,
+  .testimonial-grid figure:hover {
+    transform: none !important;
+  }
+
+  /* Flatten buttons — keep simple active press */
+  .button-primary {
+    box-shadow: 0 4px 14px -4px rgba(219, 39, 119, 0.4);
+    transform: none !important;
+  }
+  .button-primary:hover { transform: none !important; }
+  .button-primary:active {
+    transform: scale(0.97) !important;
+    box-shadow: 0 2px 8px rgba(219, 39, 119, 0.25);
+  }
+  .button-light {
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+    transform: none !important;
+  }
+  .button-light:hover { transform: none !important; }
+  .button-light:active { transform: scale(0.97) !important; }
+
+  /* Brand mark — keep flat shadow */
+  .brand-mark {
+    box-shadow: 0 2px 8px rgba(219, 39, 119, 0.3) !important;
+    transform: none !important;
+  }
+  .brand:hover .brand-mark { transform: none !important; }
+
+  /* Portal tabs — no lift */
+  .portal-tabs button.is-active {
+    transform: none;
+  }
+  .portal-tabs button:not(.is-active):hover {
+    transform: none;
+  }
+
+  /* Table rows — no horizontal shift (causes scroll) */
+  tr:hover td {
+    transform: none !important;
+  }
+
+  /* Hide ambient orbs (heavy blur + animation on mobile) */
+  .section::before { display: none; }
+
+  /* Header — keep flat */
+  .site-header {
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    transform: none;
+  }
+
+  /* Scroll reveal — simpler entrance on mobile */
+  .reveal-3d {
+    transform: translateY(20px);
+  }
+  .reveal-3d.is-visible {
+    transform: translateY(0);
+  }
+}
+
+/* Extra: very small phones */
+@media (max-width: 430px) {
+  .hero-metrics > div {
+    padding: 0.75rem 1rem;
+  }
+  .hero-metrics strong {
+    font-size: 1.6rem;
+  }
+}

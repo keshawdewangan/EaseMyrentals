@@ -1002,6 +1002,34 @@ td {
   .panel-heading {
     display: grid;
   }
+
+  .other-services-grid,
+  .service-card-grid,
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portal-tabs {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .portal-tabs button {
+    font-size: 0.8rem;
+    padding: 0.5rem 0.9rem;
+  }
+
+  .admin-tabs {
+    flex-wrap: wrap;
+  }
+
+  table {
+    font-size: 0.82rem;
+  }
+
+  th, td {
+    padding: 10px 8px;
+  }
 }
 
 @media (max-width: 430px) {
